@@ -1,0 +1,11 @@
+.header__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    color: black;
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}

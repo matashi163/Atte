@@ -1,0 +1,29 @@
+.auth__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth__title {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.auth__transition {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.auth__transition--text {
+    display: flex;
+    justify-content: center;
+    color: #909090;
+}
+
+.auth__transition--link {
+    display: flex;
+    justify-content: center;
+    color: #214be0;
+    text-decoration: none;
+}
