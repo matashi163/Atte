@@ -1,7 +1,6 @@
 html,
 body {
     height: 100%;
-    
 }
 
 .base {
@@ -30,7 +29,6 @@ body {
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
-    padding: 48px;
     background-color: #f2f2f2;
 }
 

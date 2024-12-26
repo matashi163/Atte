@@ -30,6 +30,8 @@ class LoginRequest extends FortifyLoginRequest
             'email' => [
                 'required',
                 'email',
+                'string',
+                'max:191',
                 function ($attribute, $value, $fail) {
                     if (!User::where('email', $value)->exists()) {
                         $fail('ログイン情報が登録されていません');
@@ -38,6 +40,9 @@ class LoginRequest extends FortifyLoginRequest
             ],
             'password' => [
                 'required',
+                'string',
+                'min:8',
+                'max:191',
                 function ($attribute, $value, $fail) {
                     $user = User::where('email', $this->email)->first();
                     if ($user && !Hash::check($value, $user->password)) {

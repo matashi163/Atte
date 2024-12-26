@@ -13,7 +13,3 @@
     <button class="header__button">ログアウト</button>
 </form>
 @endsection
-
-@section('content')
-@yield('content')
-@endsection

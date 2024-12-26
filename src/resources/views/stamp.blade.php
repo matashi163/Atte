@@ -8,7 +8,7 @@
 <div class="stamp__content">
     <p class="stamp__text">
         @if(!$check && $status == 0)
-        猪股昂志さんお疲れ様です！
+        {{$name}}さんお疲れ様です！
         @elseif($status == 1)
         出勤中
         @elseif($status == 2)

@@ -1,6 +1,7 @@
 .auth__content {
     display: flex;
     flex-direction: column;
+    padding: 48px;
 }
 
 .auth__title {

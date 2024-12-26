@@ -1,0 +1,110 @@
+.attendance__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.attendance__date {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    padding: 50px;
+}
+
+.date__button {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #fff;
+    border: solid 1px #214be0;
+    border-radius: 3px;
+}
+
+.date__text {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 20px;
+}
+
+.attendance__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.list__content {
+    display: flex;
+    flex-grow: 1;
+    padding: 0px 100px;
+}
+
+.list__table {
+    width: 100%;
+}
+
+.list__table--row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    border-top: solid 1px #909090;
+}
+
+.list__table--header {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    font-size: 20px;
+}
+
+.list__table--item {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    font-size: 18px;
+}
+
+.list__pagination {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+}
+
+.pagination li {
+    margin: 0 1px;
+}
+
+.pagination li a {
+    padding: 10px 15px;
+    color: #2384cf;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.pagination li.active span {
+    background-color: #2384cf;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.pagination li.disabled span {
+    padding: 10px 15px;
+    color: #ccc;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .list__content {
+        padding: 0px 50px;
+    }
+}

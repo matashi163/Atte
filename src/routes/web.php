@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StampController;
+use App\Http\Controllers\AttendanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +21,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/work_finish', [StampController::class, 'workFinish']);
     Route::get('/break_start', [StampController::class, 'breakStart']);
     Route::get('/break_finish', [StampController::class, 'breakFinish']);
-});
-
-Route::get('/test', function () {
-    return view('test');
+    Route::get('/attendance/{date?}', [AttendanceController::class, 'viewAttendance']);
 });
