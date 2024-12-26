@@ -39,7 +39,7 @@
     pointer-events: none;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
     .stamp__buttons--group {
         display: flex;
         flex-direction: column;
